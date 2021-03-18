@@ -1,89 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    /* overflow-y: hidden; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-y: hidden; */
 }
-body{
-    font-family:"Poppins";
+body {
+  font-family: 'Poppins';
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-header,section{
-    background-color:#1b1b1b;;
+header,
+section {
+  background-color: #1b1b1b;
 }
-nav{
-    width:75%;
-    margin:auto;
-    display:flex;
-    justify-content: space-between;
-    padding:15px 0;
-    align-items: center;
+nav {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
 }
-nav ul{
-    display:flex;
-    width:50%;
-    justify-content: space-between;
-    align-items: center;
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
 }
-nav ul li a{
-    color:whitesmoke;
+nav ul li a {
+  color: whitesmoke;
 }
-nav a{
-    color:whitesmoke;
+nav a {
+  color: whitesmoke;
 }
-nav a:hover{
-    color:red;
+nav a:hover {
+  color: red;
 }
-nav h3{
-    font-size:32px;
-    color:whitesmoke;
+nav h3 {
+  font-size: 32px;
+  color: whitesmoke;
 }
-.banner{
-    display:flex;
+.banner {
+  display: flex;
 }
-.info{
-    width:50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info h1 {
+  font-size: 110px;
+  color: whitesmoke;
+}
+.info p {
+  font-size: 36px;
+  background-color: red;
+  padding: 10px;
+  opacity: 0.8;
+  transform: rotate(-20deg);
+  margin-top: -100px;
+}
+.image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .line {
+    width: 27px;
+    height: 2px;
+    background-color: whitesmoke;
+  }
+  .banner {
     flex-direction: column;
-}
-.info h1{
-    font-size:110px;
-    color:whitesmoke;
-}
-.info p{
-    font-size:36px;
-    background-color:red;
-    padding:10px;
-    opacity:0.8;
-    transform: rotate(-20deg);
-    margin-top:-100px;
-}
-.image{
-width:50%;
-display:flex;
-align-items: center;
-}
-.image img{
-    width:100%;
-   height:auto;
-}
-@media only screen and (max-width:768px){
-    .banner{
-        flex-direction: column;
-    }
-    .info{
-        width:100%;
-    }
-    .image{
-        width:100%;
-    }
+  }
+  .info {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
 }
